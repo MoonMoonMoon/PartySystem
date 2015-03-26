@@ -33,12 +33,12 @@ public class User {
 	/**
 	 * 学校
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String school;
 	/**
 	 * 学院
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String college;
 	/**
 	 * 所在组织
@@ -48,7 +48,7 @@ public class User {
 	/**
 	 * 党员照片
 	 */
-	@Column(nullable=false,length=500)
+	@Column(nullable=true,length=255)
 	private String photoLoc;
 	/**
 	 * 人员类别
@@ -68,107 +68,107 @@ public class User {
 	/**
 	 * 民族
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String nation;
 	/**
 	 * 籍贯
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String nativePlace;
 	/**
 	 * 电话
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String mobile;
 	/**
 	 * 身份证
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String idCard;
 	/**
 	 * 出生日期
 	 */
-	@Column(nullable=false)
+	@Column(nullable=true)
 	private Date birthDate;
 	/**
 	 * 入党日期
 	 */
-	@Column(nullable=false)
+	@Column(nullable=true)
 	private Date joinDate;
 	/**
 	 * 转正日期
 	 */
-	@Column(nullable=false)
+	@Column(nullable=true)
 	private Date confirmationDate;
 	/**
 	 * 学历
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String edu;
 	/**
 	 * 学位
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String degree;
 	/**
 	 * 工作岗位
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String job;
 	/**
 	 * 工作单位
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String position;
 	/**
 	 * 档案所在地
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String archivesLoc;
 	/**
 	 * 技术职位
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String technicalPosition;
 	/**
 	 * 技术等级
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String technicalLevel;
 	/**
 	 * 社会阶层
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String socialClass;
 	/**
 	 * 一线情况 First case
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String firstCase;
 	/**
 	 * 住址
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String address;
 	/**
 	 * QQ
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String qqNumber;
 	/**
 	 * 邮箱
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String email;
 	/**
 	 * 个性签名
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String signature;
 	/**
 	 * 个人简介
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String resume;
 	public Long getId() {
 		return id;
