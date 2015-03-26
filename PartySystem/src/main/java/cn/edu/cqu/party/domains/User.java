@@ -53,7 +53,7 @@ public class User {
 	/**
 	 * 人员类别
 	 */
-	@Column(nullable=false,length=50)
+	@Column(nullable=true,length=50)
 	private String userType;
 	/**
 	 * 姓名
@@ -148,7 +148,7 @@ public class User {
 	/**
 	 * 住址
 	 */
-	@Column(nullable=true,length=50)
+	@Column(nullable=true,length=255)
 	private String address;
 	/**
 	 * QQ
@@ -163,12 +163,12 @@ public class User {
 	/**
 	 * 个性签名
 	 */
-	@Column(nullable=true,length=50)
+	@Column(nullable=true,length=255)
 	private String signature;
 	/**
 	 * 个人简介
 	 */
-	@Column(nullable=true,length=50)
+	@Column(nullable=true,length=255)
 	private String resume;
 	public Long getId() {
 		return id;
